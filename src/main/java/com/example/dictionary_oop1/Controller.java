@@ -33,6 +33,8 @@ public class Controller {
         listView.setOnMouseClicked(event -> {
             String selectedItem = listView.getSelectionModel().getSelectedItem().toString();
             welcomeText.setText(DictionaryManagement.dictionaryLookup(selectedItem));
+            TextToSpeech tts = new TextToSpeech("kevin16");
+            tts.speak(selectedItem);
         });
     }
 }

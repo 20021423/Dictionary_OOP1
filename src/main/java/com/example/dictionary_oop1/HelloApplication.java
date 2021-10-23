@@ -17,17 +17,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-//        ListView listView = new ListView();
-//
-//        listView.getItems().add("Item 1");
-//        listView.getItems().add("Item 2");
-//        listView.getItems().add("Item 3");
-//
-//        HBox hbox = new HBox(listView);
-//
-//        Scene scene = new Scene(hbox, 300, 120);
-//        primaryStage.setScene(scene);
-//        primaryStage.show();
     }
 
     public static void main(String[] args) throws FileNotFoundException {
