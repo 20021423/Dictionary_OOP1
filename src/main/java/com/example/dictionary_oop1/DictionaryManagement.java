@@ -10,6 +10,10 @@ import java.util.Scanner;
 public class DictionaryManagement {
     private static ArrayList<Word> arrayList = Dictionary.getWordArrayList();
 
+    public static ArrayList<Word> getArrayList() {
+        return arrayList;
+    }
+
     public static void insertFromCommandline() {
         Scanner sc = new Scanner(System.in);
         Dictionary dictionary = new Dictionary();

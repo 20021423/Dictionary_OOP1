@@ -7,6 +7,6 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Word> array = DictionaryManagement.insertFromFile();
-        Dictionary.output();
+        System.out.println(DictionaryManagement.dictionaryLookup("english"));
     }
 }
