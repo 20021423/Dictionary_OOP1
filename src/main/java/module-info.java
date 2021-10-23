@@ -6,6 +6,7 @@ module com.example.dictionary_oop1 {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires javafx.graphics;
+    requires freetts;
 
     opens com.example.dictionary_oop1 to javafx.fxml;
     exports com.example.dictionary_oop1;

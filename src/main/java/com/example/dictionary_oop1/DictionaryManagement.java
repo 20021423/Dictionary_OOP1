@@ -47,7 +47,7 @@ public class DictionaryManagement {
         ArrayList<Word> result = new ArrayList<>();
         int j = 0;
         for (int i = 0; i < n; i++) {
-            if (arrayList.get(i).getWord_target().substring(0, temp.length()).equals(temp)) {
+            if (arrayList.get(i).getWord_target().startsWith(temp)) {
                 result.add(arrayList.get(i));
             }
         }
