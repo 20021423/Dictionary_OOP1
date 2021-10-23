@@ -20,6 +20,7 @@ public class Controller {
 
     @FXML
     protected void buttonSearch(ActionEvent event) {
+        listView.getItems().clear();
         String input = textField.getText();
         ArrayList<Word> list = DictionaryManagement.dictionarySearcher(input);
         for (int i = 0; i < list.size(); i++) {
