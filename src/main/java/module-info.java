@@ -7,6 +7,7 @@ module com.example.dictionary_oop1 {
     requires org.kordamp.bootstrapfx.core;
     requires javafx.graphics;
     requires freetts;
+    requires java.sql;
 
     opens com.example.dictionary_oop1 to javafx.fxml;
     exports com.example.dictionary_oop1;
