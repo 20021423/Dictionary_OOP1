@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller">
+   <children>
+      <TextField fx:id="textField" layoutY="14.0" prefHeight="31.0" prefWidth="154.0" styleClass="nextback">
+         <effect>
+            <DropShadow height="11.67" radius="6.1125" width="14.78" />
+         </effect>
+      </TextField>
+      <Button layoutX="166.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonSearch" text="Search" textAlignment="CENTER">
+         <effect>
+            <DropShadow height="14.78" radius="6.1125" width="11.67" />
+         </effect>
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="251.0" layoutY="14.0" mnemonicParsing="false" text="Speak">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="336.0" layoutY="14.0" mnemonicParsing="false" text="Add">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="14.0" mnemonicParsing="false" text="Remove">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="491.0" layoutY="14.0" mnemonicParsing="false" text="Google API" textAlignment="CENTER">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutY="70.0" onMouseClicked="#handleItemClicks" opacity="0.38" prefHeight="325.0" prefWidth="154.0">
+         <effect>
+            <DropShadow height="14.78" radius="7.6675" width="17.89" />
+         </effect>
+      </ListView>
+      <TextArea layoutX="166.0" layoutY="70.0" opacity="0.38" prefHeight="325.0" prefWidth="416.0" styleClass="nextback">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextArea>
+      <Label fx:id="welcomeText" layoutX="181.0" layoutY="86.0" prefHeight="111.0" prefWidth="376.0">
+         <font>
+            <Font name=".VnMonotype corsiva Italic" size="30.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

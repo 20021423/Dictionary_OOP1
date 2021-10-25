@@ -1,6 +1,5 @@
 english tiếng anh
 hello xin chào
-translate dich
 read doc
 write viet
 phone dien thoai

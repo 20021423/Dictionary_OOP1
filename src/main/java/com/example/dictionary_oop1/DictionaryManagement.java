@@ -21,7 +21,7 @@ public class DictionaryManagement {
     }
 
     public static ArrayList<Word> insertFromFile() throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("E:\\Dictionary_OOP1\\src\\main\\java\\com\\example\\dictionary_oop1\\dictionaries.txt"));
+        Scanner sc = new Scanner(new File("src/main/java/com/example/dictionary_oop1/dictionaries.txt"));
         while (sc.hasNext()) {
             String s = sc.next();
             String k = sc.nextLine();

@@ -11,12 +11,12 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 800);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DictionaryLayout.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        scene.getStylesheets().add(getClass().getResource("Back.css").toExternalForm());
         stage.setTitle("English Dictionary");
         stage.setScene(scene);
         stage.show();
-
     }
 
     public static void main(String[] args) throws FileNotFoundException {
