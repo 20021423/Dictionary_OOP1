@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller.APIController">
+   <children>
+      <Button layoutY="100.0" mnemonicParsing="false" onAction="#changeSceneList" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="ListWord" textFill="#fffafa">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="220.0" mnemonicParsing="false" onAction="#changeSceneEdit" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="EditWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="280.0" mnemonicParsing="false" onAction="#changeSceneDelete" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="DeleteWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="225.0" layoutY="14.0" prefHeight="57.0" prefWidth="150.0" text="Dictionary" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="input" layoutX="123.0" layoutY="100.0" prefHeight="110.0" prefWidth="477.0" />
+      <TextArea fx:id="result" layoutX="123.0" layoutY="290.0" prefHeight="110.0" prefWidth="477.0" />
+      <Button layoutX="203.0" layoutY="235.0" mnemonicParsing="false" styleClass="mybutton" text="EN to VI" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font></Button>
+      <Button layoutX="426.0" layoutY="235.0" mnemonicParsing="false" styleClass="mybutton" text="VI to EN" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font></Button>
+      <Button layoutY="340.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="123.0" styleClass="clickedback" text="Google API" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="160.0" mnemonicParsing="false" onAction="#changeSceneAdd" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="AddWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

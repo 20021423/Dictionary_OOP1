@@ -1,4 +1,4 @@
-package com.company;
+package com.example.dictionary_oop1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,11 +1,20 @@
 .back {
-    -fx-background-color: #5b5b5b;
+    -fx-background-color: #313859;
+    /*-fx-background-image: url('BackGR.jpg');*/
 }
 
 .nextback {
     -fx-background-color: #858585;
 }
 
-.button {
-    -fx-background-color: #e1bc69;
+.clickedback {
+    -fx-background-color: #7a0f0f;
+}
+
+.searchbutton {
+    -fx-background-color: white;
+}
+
+.mybutton {
+    -fx-background-color: #a41717;
 }

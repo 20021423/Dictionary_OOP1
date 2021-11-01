@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller.ListController">
+   <children>
+      <Button layoutY="100.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="123.0" styleClass="clickedback" text="ListWord" textFill="#fffafa">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="220.0" mnemonicParsing="false" onAction="#changeSceneEdit" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="EditWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="280.0" mnemonicParsing="false" onAction="#changeSceneDelete" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="DeleteWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="340.0" mnemonicParsing="false" onAction="#changeSceneAPI" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="Google API" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField" layoutX="123.0" layoutY="100.0" prefHeight="42.0" prefWidth="205.0" />
+      <ListView fx:id="listView" layoutX="123.0" layoutY="141.0" onMouseClicked="#handleItemClicks" prefHeight="259.0" prefWidth="205.0" />
+      <WebView fx:id="WebText" layoutX="328.0" layoutY="100.0" prefHeight="300.0" prefWidth="271.0" />
+      <Label layoutX="225.0" layoutY="14.0" prefHeight="57.0" prefWidth="150.0" text="Dictionary" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="280.0" layoutY="106.0" mnemonicParsing="false" onAction="#buttonSearch" prefHeight="31.0" prefWidth="41.0" styleClass="searchbutton">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Mag.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutY="160.0" mnemonicParsing="false" onAction="#changeSceneAdd" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="AddWord" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="532.0" layoutY="101.0" mnemonicParsing="false" onAction="#buttonSpeak" prefHeight="31.0" prefWidth="51.0" styleClass="searchbutton">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" styleClass="searchbutton">
+               <image>
+                  <Image url="@Speaker.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
