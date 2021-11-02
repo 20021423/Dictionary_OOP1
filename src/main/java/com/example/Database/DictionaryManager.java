@@ -7,6 +7,10 @@ import java.sql.*;
 import java.sql.SQLException;
 import java.util.LinkedList;
 
+/**
+ *  Ref
+ */
+
 public class DictionaryManager {
     public static java.sql.Connection connection;
     public static java.sql.PreparedStatement preparedness;
@@ -19,25 +23,6 @@ public class DictionaryManager {
             e.printStackTrace();
         }
     }
-
-    /**
-     * Searches detail of word in the database.
-     */
-    public static String searchWord(String word) throws SQLException {
-        final String sqlSearchDetail = "select detail from dictionary where word=?";
-        preparedness = connection.prepareStatement(sqlSearchDetail);
-        preparedness.setString(1, word);
-        ResultSet rs = preparedness.executeQuery();
-        System.out.println("Searched already!");
-
-        if (!rs.next()) {
-            return "";
-        } else {
-            System.out.println(rs.getString("detail"));
-            return rs.getString("detail");
-        }
-    }
-
 
     /**
      * Takes words from database to word list.

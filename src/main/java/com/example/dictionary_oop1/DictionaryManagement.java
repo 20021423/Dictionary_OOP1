@@ -107,4 +107,8 @@ public class DictionaryManagement {
             System.out.println("NOT FOUND");
         }
     }
+
+    public static void editWord(String word, String explain) {
+
+    }
 }
