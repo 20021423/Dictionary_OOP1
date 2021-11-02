@@ -3,13 +3,10 @@ package com.example.Database;
 import com.example.dictionary_oop1.Dictionary;
 import com.example.dictionary_oop1.Word;
 
-import java.sql.*;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.LinkedList;
-
-/**
- *  Ref
- */
+import java.sql.Statement;
 
 public class DictionaryManager {
     public static java.sql.Connection connection;
@@ -22,6 +19,42 @@ public class DictionaryManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Inserts word to the database.
+     */
+    public static void insertWord(final String word, final String detail) throws SQLException {
+        final String sqlInsertData = "insert into dictionary (word, detail) value (?, ?)";
+
+        preparedness = connection.prepareStatement(sqlInsertData);
+        preparedness.setString(1, word);
+        preparedness.setString(2, detail);
+        preparedness.executeUpdate();
+
+        System.out.println("Inserted successfully");
+    }
+
+    /**
+     * Deletes a word from the database.
+     */
+    public static void deleteWord(String word) throws SQLException {
+        String sqlDeleteData = "delete from dictionary where word = ?";
+        preparedness = connection.prepareStatement(sqlDeleteData);
+        preparedness.setString(1, word);
+        preparedness.executeUpdate();
+        System.out.println("Deleted successfully");
+    }
+
+    /**
+     * Fixes a Word's detail.
+     */
+    public static void fixWord(String word, String detail) throws SQLException {
+        String sqlFixData = "update dictionary set detail = ? where word = ? ";
+        preparedness = connection.prepareStatement(sqlFixData);
+        preparedness.setString(1, detail);
+        preparedness.setString(2, word);
+        preparedness.executeUpdate();
     }
 
     /**
