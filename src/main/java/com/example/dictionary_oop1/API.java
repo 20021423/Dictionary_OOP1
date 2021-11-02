@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 public class API {
     /**
+     * Ref:
      * Translates using Google API.
      * Source: https://stackoverflow.com/questions/8147284/how-to-use-google-translate-api-in-my-java-application
      */

@@ -32,9 +32,7 @@ public class DictionaryManagement {
     }
 
     public static String dictionaryLookup(String temp) {
-
-        int n = arrayList.size();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i).getWord_target().equals(temp)) {
                 return arrayList.get(i).getWord_explain();
             }
@@ -43,10 +41,9 @@ public class DictionaryManagement {
     }
 
     public static ArrayList<Word> dictionarySearcher(String temp) {
-        int n = arrayList.size();
         ArrayList<Word> result = new ArrayList<>();
         int j = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i).getWord_target().startsWith(temp)) {
                 result.add(arrayList.get(i));
             }
@@ -57,15 +54,12 @@ public class DictionaryManagement {
         return result;
     }
 
-    public static void dictionayExportToFile() throws IOException {
-        File file = new File("src\\dictionaries.txt");
+    public static void dictionaryExportToFile(String wordT, String wordE) throws IOException {
+        File file = new File("src/main/java/com/example/dictionary_oop1/dictionaries.txt");
         FileOutputStream dict = new FileOutputStream(file);
-        int n = arrayList.size();
-        for (int i = 0; i < n; i++) {
-            String temp = "";
-            temp = arrayList.get(i).getWord_target() + "" + arrayList.get(i).getWord_explain() + "\n";
-            dict.write(temp.getBytes());
-        }
+        String temp = "";
+        temp = wordT + " " + wordE + "\n";
+        dict.write(temp.getBytes());
         dict.close();
     }
 
@@ -73,9 +67,8 @@ public class DictionaryManagement {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap tu ban muon xoa: ");
         String temp = sc.next();
-        int n = arrayList.size();
         boolean flag = false;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i).getWord_target().equals(temp)) {
                 flag = true;
                 arrayList.remove(arrayList.get(i));
@@ -91,8 +84,7 @@ public class DictionaryManagement {
         System.out.print("Nhap tu ban muon sua: ");
         String temp = sc.next();
         boolean flag = false;
-        int n = arrayList.size();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i).getWord_target().equals(temp)) {
                 flag = true;
                 System.out.print("Ban muon sua thanh: ");
@@ -106,9 +98,5 @@ public class DictionaryManagement {
         if (!flag) {
             System.out.println("NOT FOUND");
         }
-    }
-
-    public static void editWord(String word, String explain) {
-
     }
 }

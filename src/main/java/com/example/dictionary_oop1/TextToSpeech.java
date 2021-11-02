@@ -3,6 +3,9 @@ package com.example.dictionary_oop1;
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
+/**
+ * ref.
+ */
 
 public class TextToSpeech {
 

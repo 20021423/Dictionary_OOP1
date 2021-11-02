@@ -17,6 +17,6 @@ public class DictionaryCommandline {
         showAllWords();
         DictionaryManagement.deleteWord();
         DictionaryManagement.editWord();
-        DictionaryManagement.dictionayExportToFile();
+//        DictionaryManagement.dictionaryExportToFile();
     }
 }

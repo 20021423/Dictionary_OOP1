@@ -23,7 +23,6 @@ public class ListController {
     @FXML
     private WebView WebText;
 
-
     @FXML
     TextField textField;
 

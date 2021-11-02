@@ -38,7 +38,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Button>
-      <TextField layoutX="161.0" layoutY="205.0" />
+      <TextField fx:id="wordT" layoutX="161.0" layoutY="205.0" />
       <Label layoutX="161.0" layoutY="171.0" text="Nhập từ:" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
@@ -49,7 +49,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="407.0" layoutY="206.0" text="Message" textFill="WHITE">
+      <Label fx:id="Mess" layoutX="407.0" layoutY="206.0" text="Message" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="24.0" />
          </font>
