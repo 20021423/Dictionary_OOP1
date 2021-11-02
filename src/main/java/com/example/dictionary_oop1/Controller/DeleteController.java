@@ -1,6 +1,10 @@
 package com.example.dictionary_oop1.Controller;
 
+import com.example.Database.DictionaryManager;
+import com.example.dictionary_oop1.Dictionary;
+import com.example.dictionary_oop1.DictionaryManagement;
 import com.example.dictionary_oop1.HelloApplication;
+import com.example.dictionary_oop1.Word;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class DeleteController {
 
@@ -19,6 +24,19 @@ public class DeleteController {
 
     @FXML
     private Label Mess;
+
+    @FXML
+    protected void buttonDelete(ActionEvent event) throws IOException, SQLException {
+        boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText()).equals("NOT FOUND");
+        if (!flag) {
+            DictionaryManagement.removeWord(DictionaryManagement.dictionaryLookup2(wordT.getText()));
+            DictionaryManager.deleteWord(wordT.getText());
+            Mess.setText("Done!");
+        }
+        else {
+            Mess.setText("Invalid Word!");
+        }
+    }
 
     public void changeSceneList(ActionEvent e) throws IOException {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();

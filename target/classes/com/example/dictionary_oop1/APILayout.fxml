@@ -28,13 +28,19 @@
             <Font name="Lucida Sans Typewriter Regular" size="24.0" />
          </font>
       </Label>
-      <TextArea fx:id="input" layoutX="123.0" layoutY="100.0" prefHeight="110.0" prefWidth="477.0" />
-      <TextArea fx:id="result" layoutX="123.0" layoutY="290.0" prefHeight="110.0" prefWidth="477.0" />
-      <Button layoutX="203.0" layoutY="235.0" mnemonicParsing="false" styleClass="mybutton" text="EN to VI" textFill="WHITE">
+      <TextArea fx:id="input" layoutX="123.0" layoutY="100.0" prefHeight="110.0" prefWidth="477.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+      <TextArea fx:id="result" layoutX="123.0" layoutY="290.0" prefHeight="110.0" prefWidth="477.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+      <Button layoutX="203.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttonEtV" styleClass="mybutton" text="EN to VI" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font></Button>
-      <Button layoutX="426.0" layoutY="235.0" mnemonicParsing="false" styleClass="mybutton" text="VI to EN" textFill="WHITE">
+      <Button layoutX="426.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttonVtE" styleClass="mybutton" text="VI to EN" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font></Button>

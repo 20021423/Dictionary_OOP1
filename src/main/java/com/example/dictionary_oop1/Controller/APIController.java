@@ -1,6 +1,6 @@
 package com.example.dictionary_oop1.Controller;
 
-import com.example.dictionary_oop1.HelloApplication;
+import com.example.dictionary_oop1.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +17,18 @@ public class APIController {
 
     @FXML
     private TextArea result;
+
+    @FXML
+    protected void buttonEtV(ActionEvent event) throws IOException {
+        String in = input.getText();
+        result.setText(API.translate("en", "vi",in));
+    }
+
+    @FXML
+    protected void buttonVtE(ActionEvent event) throws IOException {
+        String in = input.getText();
+        result.setText(API.translate("vi", "en",in));
+    }
 
     public void changeSceneEdit(ActionEvent e) throws IOException {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();

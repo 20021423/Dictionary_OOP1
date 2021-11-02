@@ -44,7 +44,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="217.0" layoutY="250.0" mnemonicParsing="false" styleClass="mybutton" text="Delete" textFill="WHITE">
+      <Button layoutX="217.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonDelete" styleClass="mybutton" text="Delete" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>

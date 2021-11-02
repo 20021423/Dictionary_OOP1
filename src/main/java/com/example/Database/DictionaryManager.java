@@ -43,7 +43,7 @@ public class DictionaryManager {
         preparedness = connection.prepareStatement(sqlDeleteData);
         preparedness.setString(1, word);
         preparedness.executeUpdate();
-        System.out.println("Deleted successfully");
+
     }
 
     /**

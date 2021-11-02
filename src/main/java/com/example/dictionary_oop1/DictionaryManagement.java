@@ -14,6 +14,14 @@ public class DictionaryManagement {
         return arrayList;
     }
 
+    public static void removeWord(Word word) {
+        arrayList.remove(word);
+    }
+
+    public static void replaceWord(Word word, String newE ) {
+        word.setWord_explain(newE);
+    }
+
     public static void insertFromCommandline() {
         Scanner sc = new Scanner(System.in);
         Dictionary dictionary = new Dictionary();
@@ -38,6 +46,15 @@ public class DictionaryManagement {
             }
         }
         return "NOT FOUND";
+    }
+
+    public static Word dictionaryLookup2(String temp) {
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i).getWord_target().equals(temp)) {
+                return arrayList.get(i);
+            }
+        }
+        return null;
     }
 
     public static ArrayList<Word> dictionarySearcher(String temp) {
