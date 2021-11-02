@@ -4,7 +4,7 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 /**
- * ref.
+ * ref. https://www.youtube.com/watch?v=_8XstaraP9E
  */
 
 public class TextToSpeech {
