@@ -59,14 +59,10 @@ public class DictionaryManagement {
 
     public static ArrayList<Word> dictionarySearcher(String temp) {
         ArrayList<Word> result = new ArrayList<>();
-        int j = 0;
         for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i).getWord_target().startsWith(temp)) {
                 result.add(arrayList.get(i));
             }
-        }
-        for (int i = 0; i < j; i++) {
-            System.out.println(result.get(i).getWord_target());
         }
         return result;
     }

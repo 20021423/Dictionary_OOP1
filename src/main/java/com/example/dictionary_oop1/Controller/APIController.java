@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,18 +17,18 @@ public class APIController {
     private TextArea input;
 
     @FXML
-    private TextArea result;
+    private WebView result;
 
     @FXML
     protected void buttonEtV(ActionEvent event) throws IOException {
         String in = input.getText();
-        result.setText(API.translate("en", "vi",in));
+        result.getEngine().loadContent(API.translate("vi", "en",in));
     }
 
     @FXML
     protected void buttonVtE(ActionEvent event) throws IOException {
         String in = input.getText();
-        result.setText(API.translate("vi", "en",in));
+        result.getEngine().loadContent(API.translate("vi", "en",in));
     }
 
     public void changeSceneEdit(ActionEvent e) throws IOException {
