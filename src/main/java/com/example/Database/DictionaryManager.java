@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DictionaryManager {
+    /**
+     * Reference: https://openplanning.net/10167/java-jdbc
+     */
     public static java.sql.Connection connection;
     public static java.sql.PreparedStatement preparedness;
 
