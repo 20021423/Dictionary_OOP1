@@ -1,8 +1,5 @@
 package com.example.dictionary_oop1;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -40,7 +37,7 @@ public class Dictionary {
         }
     }
 
-    public static ArrayList<Word> getWordArrayList(){
+    public static ArrayList<Word> getWordArrayList() {
         return wordArrayList;
     }
 }

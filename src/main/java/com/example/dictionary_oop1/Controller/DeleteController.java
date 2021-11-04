@@ -1,10 +1,8 @@
 package com.example.dictionary_oop1.Controller;
 
 import com.example.Database.DictionaryManager;
-import com.example.dictionary_oop1.Dictionary;
 import com.example.dictionary_oop1.DictionaryManagement;
 import com.example.dictionary_oop1.HelloApplication;
-import com.example.dictionary_oop1.Word;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,8 +30,7 @@ public class DeleteController {
             DictionaryManagement.removeWord(DictionaryManagement.dictionaryLookup2(wordT.getText()));
             DictionaryManager.deleteWord(wordT.getText());
             Mess.setText("Done!");
-        }
-        else {
+        } else {
             Mess.setText("Invalid Word!");
         }
     }
@@ -42,7 +39,7 @@ public class DeleteController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("ListLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -51,7 +48,7 @@ public class DeleteController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("APILayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -60,7 +57,7 @@ public class DeleteController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("EditLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -69,7 +66,7 @@ public class DeleteController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("AddLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }

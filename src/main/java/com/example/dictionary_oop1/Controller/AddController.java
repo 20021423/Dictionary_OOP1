@@ -1,5 +1,6 @@
 package com.example.dictionary_oop1.Controller;
 
+import com.example.Database.DictionaryManager;
 import com.example.dictionary_oop1.Dictionary;
 import com.example.dictionary_oop1.DictionaryManagement;
 import com.example.dictionary_oop1.HelloApplication;
@@ -14,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class AddController {
 
@@ -27,11 +29,12 @@ public class AddController {
     private Label AddMess;
 
     @FXML
-    protected void buttonAdd(ActionEvent event) throws IOException {
+    protected void buttonAdd(ActionEvent event) throws IOException, SQLException {
         if (DictionaryManagement.dictionaryLookup(wordTarget.getText()).equals("NOT FOUND")) {
             Dictionary.addWord(new Word(wordTarget.getText(), wordExplain.getText()));
             AddMess.setText("Done!");
-            DictionaryManagement.dictionaryExportToFile(wordTarget.getText(), wordExplain.getText());
+//            DictionaryManagement.dictionaryExportToFile(wordTarget.getText(), wordExplain.getText());
+            DictionaryManager.insertWord(wordTarget.getText(), wordExplain.getText());
         } else AddMess.setText("Word Existed!");
     }
 

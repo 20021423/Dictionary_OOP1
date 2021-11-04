@@ -13,9 +13,9 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class ListController {
     private static String currentword = "";
@@ -58,7 +58,7 @@ public class ListController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("APILayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -67,7 +67,7 @@ public class ListController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("EditLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -76,7 +76,7 @@ public class ListController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("AddLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -85,7 +85,7 @@ public class ListController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("DeleteLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }

@@ -18,7 +18,7 @@ public class DictionaryManagement {
         arrayList.remove(word);
     }
 
-    public static void replaceWord(Word word, String newE ) {
+    public static void replaceWord(Word word, String newE) {
         word.setWord_explain(newE);
     }
 

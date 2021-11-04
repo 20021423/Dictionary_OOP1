@@ -1,6 +1,7 @@
 package com.example.dictionary_oop1.Controller;
 
-import com.example.dictionary_oop1.*;
+import com.example.dictionary_oop1.API;
+import com.example.dictionary_oop1.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,20 +23,20 @@ public class APIController {
     @FXML
     protected void buttonEtV(ActionEvent event) throws IOException {
         String in = input.getText();
-        result.getEngine().loadContent(API.translate("vi", "en",in));
+        result.getEngine().loadContent(API.translate("vi", "en", in));
     }
 
     @FXML
     protected void buttonVtE(ActionEvent event) throws IOException {
         String in = input.getText();
-        result.getEngine().loadContent(API.translate("vi", "en",in));
+        result.getEngine().loadContent(API.translate("vi", "en", in));
     }
 
     public void changeSceneEdit(ActionEvent e) throws IOException {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("EditLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -44,7 +45,7 @@ public class APIController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("AddLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -53,7 +54,7 @@ public class APIController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("DeleteLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -62,7 +63,7 @@ public class APIController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("ListLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }

@@ -31,11 +31,10 @@ public class EditController {
     protected void buttonEdit(ActionEvent event) throws IOException, SQLException {
         boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText()).equals("NOT FOUND");
         if (!flag) {
-            DictionaryManager.fixWord(wordT.getText(),wordE.getText());
-            DictionaryManagement.replaceWord(Objects.requireNonNull(DictionaryManagement.dictionaryLookup2(wordT.getText())),wordE.getText());
+            DictionaryManager.fixWord(wordT.getText(), wordE.getText());
+            DictionaryManagement.replaceWord(Objects.requireNonNull(DictionaryManagement.dictionaryLookup2(wordT.getText())), wordE.getText());
             mess.setText("Done!");
-        }
-        else {
+        } else {
             mess.setText("Invalid Word!");
         }
     }
@@ -44,7 +43,7 @@ public class EditController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("AddLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -53,7 +52,7 @@ public class EditController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("DeleteLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -62,7 +61,7 @@ public class EditController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("ListLayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
@@ -71,7 +70,7 @@ public class EditController {
         Stage current = (Stage) ((Node) e.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("APILayout.fxml"));
-        Scene scene = new Scene(loader.load(),600,400);
+        Scene scene = new Scene(loader.load(), 600, 400);
         scene.getStylesheets().add((HelloApplication.class.getResource("Back.css")).toExternalForm());
         current.setScene(scene);
     }
