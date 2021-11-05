@@ -33,6 +33,7 @@ public class ListController {
     protected void buttonSearch(ActionEvent event) {
         listView.getItems().clear();
         String input = textField.getText();
+        input = input.toLowerCase();
         ArrayList<Word> list = DictionaryManagement.dictionarySearcher(input);
         for (int i = 0; i < list.size(); i++) {
             listView.getItems().add(list.get(i).getWord_target());

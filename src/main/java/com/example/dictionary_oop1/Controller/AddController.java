@@ -30,12 +30,12 @@ public class AddController {
 
     @FXML
     protected void buttonAdd(ActionEvent event) throws IOException, SQLException {
-        if (DictionaryManagement.dictionaryLookup(wordTarget.getText()).equals("NOT FOUND")) {
+        if (DictionaryManagement.dictionaryLookup(wordTarget.getText().toLowerCase()).equals("NOT FOUND")) {
             Dictionary.addWord(new Word(wordTarget.getText(), wordExplain.getText()));
             AddMess.setText("Done!");
 //            DictionaryManagement.dictionaryExportToFile(wordTarget.getText(), wordExplain.getText());
             DictionaryManager.insertWord(wordTarget.getText(), wordExplain.getText());
-        } else AddMess.setText("Word Existed!");
+        } else AddMess.setText("Invalid word!");
     }
 
     public void changeSceneDelete(ActionEvent e) throws IOException {

@@ -53,7 +53,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Button>
-      <Label fx:id="AddMess" layoutX="337.0" layoutY="206.0" prefHeight="28.0" prefWidth="187.0" text=" " textFill="WHITE">
+      <Label fx:id="AddMess" layoutX="337.0" layoutY="206.0" prefHeight="28.0" prefWidth="255.0" text=" " textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="24.0" />
          </font>

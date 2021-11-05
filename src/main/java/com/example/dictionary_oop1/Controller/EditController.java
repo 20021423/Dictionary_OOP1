@@ -29,7 +29,7 @@ public class EditController {
 
     @FXML
     protected void buttonEdit(ActionEvent event) throws IOException, SQLException {
-        boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText()).equals("NOT FOUND");
+        boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText().toLowerCase()).equals("NOT FOUND");
         if (!flag) {
             DictionaryManager.fixWord(wordT.getText(), wordE.getText());
             DictionaryManagement.replaceWord(Objects.requireNonNull(DictionaryManagement.dictionaryLookup2(wordT.getText())), wordE.getText());

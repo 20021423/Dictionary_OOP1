@@ -25,7 +25,7 @@ public class DeleteController {
 
     @FXML
     protected void buttonDelete(ActionEvent event) throws IOException, SQLException {
-        boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText()).equals("NOT FOUND");
+        boolean flag = DictionaryManagement.dictionaryLookup(wordT.getText().toLowerCase()).equals("NOT FOUND");
         if (!flag) {
             DictionaryManagement.removeWord(DictionaryManagement.dictionaryLookup2(wordT.getText()));
             DictionaryManager.deleteWord(wordT.getText());
