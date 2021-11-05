@@ -26,7 +26,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="24.0" />
          </font>
       </Label>
-      <Button layoutY="340.0" mnemonicParsing="false" onAction="#changeSceneAPI" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="Google API" textFill="WHITE">
+      <Button layoutY="340.0" mnemonicParsing="false" onAction="#changeSceneAPI" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="Translate" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>

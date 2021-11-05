@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.web.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller.ListController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller.ListController">
    <children>
       <Button layoutY="100.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="123.0" styleClass="clickedback" text="ListWord" textFill="#fffafa">
          <font>
@@ -24,7 +23,7 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Button>
-      <Button layoutY="340.0" mnemonicParsing="false" onAction="#changeSceneAPI" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="Google API" textFill="WHITE">
+      <Button layoutY="340.0" mnemonicParsing="false" onAction="#changeSceneAPI" prefHeight="60.0" prefWidth="123.0" styleClass="mybutton" text="Translate" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
